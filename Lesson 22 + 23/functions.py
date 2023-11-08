@@ -7,4 +7,4 @@ def greet_customer(name="Nameless", num_apples=7):
 greet_customer("Elliott", 10)
 greet_customer()
 
-print("hello")
+print("hello, elliott")
