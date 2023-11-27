@@ -1,8 +1,12 @@
 import datetime as dt
 
-CLAIM_NUM = 34
-HST_RATE = 0.15
+f = open("def.dat", "r")
+
+CLAIM_NUM = int(f.readline())
+HST_RATE = float(f.readline)
 CURR_DATE = dt.datetime.now()
+
+f.close()
 
 while True:
     emp_name = input("Employee name: ")
@@ -51,5 +55,10 @@ while True:
 
     if cont == "N":
         break
+
+f = open("def.dat", "w")
+f.write(f"{CLAIM_NUM}\n")
+f.write(f"{HST_RATE}\n")
+f.close()
 
 print("Thank you for using the claim processing program.")
